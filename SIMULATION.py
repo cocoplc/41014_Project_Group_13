@@ -286,7 +286,7 @@ def run_trial(
 
         if WRIST_VIEW:
 
-            with viewer.lock():
+            with viewer.lock(): #
 
                 viewer.cam.type = (
                     mujoco.mjtCamera.mjCAMERA_FIXED
